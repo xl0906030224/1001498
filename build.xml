@@ -90,7 +90,10 @@
     <import file="${sdk.dir}/tools/ant/build.xml" />
     
     <target name="release">  
-     <echo>1.正在生成用于应用的R.java存放到gen(使用aapt) ... </echo>  
+    	<exec executable="${zipalign}">
+</exec>
 
+     <echo>1.正在生成用于应用的R.java存放到gen(使用aapt) ... </echo>  
+    </target>
 
 </project>
